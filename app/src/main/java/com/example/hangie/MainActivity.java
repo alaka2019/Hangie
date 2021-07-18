@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(getApplicationContext(),players.class);
             startActivity(i);
             finish();
-        }, 5000);
+        }, 3000);
 
     }
 

@@ -21,8 +21,8 @@
         android:id="@+id/text"
         />
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/D"
         app:layout_constraintRight_toLeftOf="@id/B"
         android:id="@+id/A"
@@ -37,8 +37,8 @@
         />
 
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/D"
         app:layout_constraintRight_toLeftOf="@id/C"
         android:id="@+id/B"
@@ -53,8 +53,8 @@
         />
 
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/D"
         app:layout_constraintRight_toLeftOf="@id/D"
         android:id="@+id/C"
@@ -69,8 +69,8 @@
         />
 
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toTopOf="@id/K"
         app:layout_constraintLeft_toLeftOf="@id/K"
         android:id="@+id/D"
@@ -83,8 +83,8 @@
         android:layout_marginBottom="5dp"
         />
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/D"
         app:layout_constraintLeft_toRightOf="@+id/D"
         android:id="@+id/E"
@@ -97,8 +97,8 @@
         android:fontFamily="@font/lob_bold"
         />
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/D"
         app:layout_constraintLeft_toRightOf="@+id/E"
         android:id="@+id/F"
@@ -111,8 +111,8 @@
         android:fontFamily="@font/lob_bold"
         />
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/D"
         app:layout_constraintLeft_toRightOf="@+id/F"
         android:id="@+id/G"
@@ -126,8 +126,8 @@
         />
 
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/K"
         app:layout_constraintRight_toLeftOf="@id/I"
         android:id="@+id/H"
@@ -142,8 +142,8 @@
         />
 
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/K"
         app:layout_constraintRight_toLeftOf="@id/J"
         android:id="@+id/I"
@@ -158,8 +158,8 @@
         />
 
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/K"
         app:layout_constraintRight_toLeftOf="@id/K"
         android:id="@+id/J"
@@ -174,8 +174,8 @@
         />
 
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toTopOf="@id/R"
         app:layout_constraintLeft_toLeftOf="@id/X"
         android:id="@+id/K"
@@ -188,8 +188,8 @@
         android:layout_marginBottom="5dp"
         />
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/K"
         app:layout_constraintLeft_toRightOf="@+id/K"
         android:id="@+id/L"
@@ -202,8 +202,8 @@
         android:fontFamily="@font/lob_bold"
         />
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/K"
         app:layout_constraintLeft_toRightOf="@+id/L"
         android:id="@+id/M"
@@ -216,8 +216,8 @@
         android:fontFamily="@font/lob_bold"
         />
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/K"
         app:layout_constraintLeft_toRightOf="@+id/M"
         android:id="@+id/N"
@@ -231,8 +231,8 @@
         />
 
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/R"
         app:layout_constraintRight_toLeftOf="@id/P"
         android:id="@+id/O"
@@ -247,8 +247,8 @@
         />
 
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/R"
         app:layout_constraintRight_toLeftOf="@id/Q"
         android:id="@+id/P"
@@ -263,8 +263,8 @@
         />
 
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/R"
         app:layout_constraintRight_toLeftOf="@id/R"
         android:id="@+id/Q"
@@ -279,8 +279,8 @@
         />
 
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toTopOf="@id/X"
         app:layout_constraintLeft_toLeftOf="@id/X"
         android:id="@+id/R"
@@ -293,8 +293,8 @@
         android:layout_marginBottom="5dp"
         />
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/R"
         app:layout_constraintLeft_toRightOf="@+id/R"
         android:id="@+id/S"
@@ -307,8 +307,8 @@
         android:fontFamily="@font/lob_bold"
         />
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/R"
         app:layout_constraintLeft_toRightOf="@+id/S"
         android:id="@+id/T"
@@ -321,8 +321,8 @@
         android:fontFamily="@font/lob_bold"
         />
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/R"
         app:layout_constraintLeft_toRightOf="@+id/T"
         android:id="@+id/U"
@@ -335,8 +335,8 @@
         android:fontFamily="@font/lob_bold"
         />
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/X"
         app:layout_constraintRight_toLeftOf="@id/W"
         android:id="@+id/V"
@@ -351,8 +351,8 @@
         />
 
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/X"
         app:layout_constraintRight_toLeftOf="@id/X"
         android:id="@+id/W"
@@ -366,8 +366,8 @@
         android:layout_marginRight="5dp"
         />
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -382,8 +382,8 @@
         />
 
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/X"
         app:layout_constraintLeft_toRightOf="@+id/X"
         android:id="@+id/Y"
@@ -397,8 +397,8 @@
         />
 
     <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="@id/X"
         app:layout_constraintLeft_toRightOf="@+id/Y"
         android:id="@+id/Z"

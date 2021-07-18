@@ -113,9 +113,13 @@ public class quick extends AppCompatActivity {
         str = words.get(level);
         code="";
 
-        for(int i=0; i<str.length(); i++)
-            code+="*";
+        for(int i=0; i<str.length(); i++) {
+            if (str.charAt(i) != ' ')
+                code += "*";
 
+            else
+                code+=" ";
+        }
         text.setText(code);
     }
 
