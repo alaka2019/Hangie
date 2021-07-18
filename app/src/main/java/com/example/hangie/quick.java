@@ -17,6 +17,7 @@ public class quick extends AppCompatActivity {
     Random random=new Random();
     int rand;
     int level;
+    String str, code;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,8 +79,6 @@ public class quick extends AppCompatActivity {
         level=order.get(rand);
         order.remove(order.indexOf(rand));
 
-
-
         a.setOnClickListener(v -> keyboard("A"));
         b.setOnClickListener(v -> keyboard("B"));
         c.setOnClickListener(v -> keyboard("C"));
@@ -107,9 +106,25 @@ public class quick extends AppCompatActivity {
         y.setOnClickListener(v -> keyboard("Y"));
         z.setOnClickListener(v -> keyboard("Z"));
 
+        startgame();
+    }
+
+    public void startgame() {
+        str = words.get(level);
+        code="";
+
+        for(int i=0; i<str.length(); i++)
+            code+="*";
+
+        text.setText(code);
     }
 
     public void keyboard(String a) {
-        
+        for(int i=0; i<str.length(); i++)
+            if(str.charAt(i)==a.charAt(0))
+                code=code.substring(0,i)+a.charAt(0)+code.substring(i+1);
+
+        text.setText(code);
+
     }
 }
