@@ -2,17 +2,24 @@ package com.example.hangie;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 public class quick extends AppCompatActivity {
-    TextView text, a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z;
+    TextView text, failed, a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z;
+    ImageView h1,h2,h3,h4,h5,h6,h7;
     ArrayList<String> words=new ArrayList<String>();
     ArrayList<Integer> order=new ArrayList<Integer>();
+    ArrayList<ImageView> hearts = new ArrayList<ImageView>();
+    String fail;
+
     int lives;
     Random random=new Random();
     int rand;
@@ -49,7 +56,25 @@ public class quick extends AppCompatActivity {
         x=findViewById(R.id.X);
         y=findViewById(R.id.Y);
         z=findViewById(R.id.Z);
+
         text=findViewById(R.id.text);
+        failed=findViewById(R.id.failed);
+
+        h1=findViewById(R.id.h1);
+        h2=findViewById(R.id.h2);
+        h3=findViewById(R.id.h3);
+        h4=findViewById(R.id.h4);
+        h5=findViewById(R.id.h5);
+        h6=findViewById(R.id.h6);
+        h7=findViewById(R.id.h7);
+
+        hearts.add(h1);
+        hearts.add(h2);
+        hearts.add(h3);
+        hearts.add(h4);
+        hearts.add(h5);
+        hearts.add(h6);
+        hearts.add(h7);
 
         words.add("INTERSTELLAR");
         words.add("PREDESTINATION");
@@ -74,10 +99,6 @@ public class quick extends AppCompatActivity {
 
         for(int i=0; i<20; i++)
             order.add(i);
-
-        rand=random.nextInt(order.size());
-        level=order.get(rand);
-        order.remove(order.indexOf(rand));
 
         a.setOnClickListener(v -> keyboard("A"));
         b.setOnClickListener(v -> keyboard("B"));
@@ -110,6 +131,29 @@ public class quick extends AppCompatActivity {
     }
 
     public void startgame() {
+
+        if(order.size()==0)
+        {
+            Toast.makeText(this, "Congratulations! You are a movie geek!", Toast.LENGTH_SHORT).show();
+
+            MainActivity.setTimeout(() -> {
+                Intent i = new Intent(getApplicationContext(),players.class);
+                startActivity(i);
+                finish();
+            }, 3000);
+        }
+
+        lives=7;
+        fail="";
+        failed.setText("Failed Attempts");
+
+        for(int i=0; i<7; i++)
+            hearts.get(i).setBackgroundResource(R.drawable.heart);
+
+        rand=random.nextInt(order.size());
+        level=order.get(rand);
+        order.remove(order.indexOf(rand));
+
         str = words.get(level);
         code="";
 
@@ -124,11 +168,41 @@ public class quick extends AppCompatActivity {
     }
 
     public void keyboard(String a) {
-        for(int i=0; i<str.length(); i++)
-            if(str.charAt(i)==a.charAt(0))
-                code=code.substring(0,i)+a.charAt(0)+code.substring(i+1);
+        boolean flag=false;
+
+        for(int i=0; i<str.length(); i++) {
+            if (str.charAt(i) == a.charAt(0)) {
+                code = code.substring(0, i) + a.charAt(0) + code.substring(i + 1);
+                flag=true;
+            }
+        }
+
+        if(!flag) {
+            lives--;
+            fail=fail+a+" ";
+            failed.setText(fail);
+            hearts.get(lives).setBackgroundResource(R.drawable.lostheart);
+        }
 
         text.setText(code);
+        checkfinish();
+    }
 
+    public void checkfinish() {
+        if(code.equals(str))
+        {
+            startgame();
+        }
+
+        if(lives==0)
+        {
+            Toast.makeText(this, "You are a loser!", Toast.LENGTH_SHORT).show();
+
+            MainActivity.setTimeout(() -> {
+                Intent i = new Intent(getApplicationContext(),players.class);
+                startActivity(i);
+                finish();
+            }, 1000);
+        }
     }
 }
