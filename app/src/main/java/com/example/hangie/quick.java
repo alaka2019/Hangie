@@ -139,28 +139,27 @@ public class quick extends AppCompatActivity {
             if (order.size() == 0) {
                 Toast.makeText(this, "Congratulations! You are a movie geek!", Toast.LENGTH_SHORT).show();
 
-                MainActivity.setTimeout(() -> {
-                    Intent i = new Intent(getApplicationContext(), players.class);
-                    startActivity(i);
-                    finish();
-                }, 3000);
+                Intent i = new Intent(getApplicationContext(), players.class);
+                startActivity(i);
+                finish();
+
             }
 
-            lives = 7;
-            fail = "";
-            failed.setText("Failed Attempts");
+             lives = 7;
+             fail = "";
+             failed.setText("Failed Attempts");
 
-            for (int i = 0; i < 7; i++)
-                hearts.get(i).setBackgroundResource(R.drawable.heart);
+             for (int i = 0; i < 7; i++)
+                 hearts.get(i).setBackgroundResource(R.drawable.heart);
 
-            rand = random.nextInt(order.size());
-            level = order.get(rand);
-            order.remove(order.indexOf(rand));
+             rand = random.nextInt(order.size());
+             level = order.get(rand);
+             order.remove(order.indexOf(level));
 
-            str = words.get(level);
-            code = "";
+             str = words.get(level);
+             code = "";
 
-            for (int i = 0; i < str.length(); i++) {
+             for (int i = 0; i < str.length(); i++) {
                 if (str.charAt(i) != ' ')
                     code += "*";
 
@@ -168,8 +167,11 @@ public class quick extends AppCompatActivity {
                     code += " ";
             }
             text.setText(code);
-        } catch (Exception e) {
-            Toast.makeText(this, e.toString()+" startgame", Toast.LENGTH_LONG).show();
+
+            }
+
+        catch (Exception e) {
+            Toast.makeText(this, e.toString(), Toast.LENGTH_LONG).show();
         }
     }
 
