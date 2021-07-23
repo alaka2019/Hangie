@@ -21,17 +21,17 @@
                     >
 
                     <item
-                        android:color="#000000"
+                        android:color="#592701"
                         android:offset="0" />
                     <item
-                        android:color="#421801"
+                        android:color="#A13808"
                         android:offset="0.542" />
                     <item
-                        android:color="#C83B02"
+                        android:color="#1A0139"
                         android:offset="0.542" />
                     <item
-                        android:color="#CF7C01"
-                        android:offset="0.8" />
+                        android:color="#27021E"
+                        android:offset="1.0" />
                 </gradient>
             </aapt:attr>
         </path>
