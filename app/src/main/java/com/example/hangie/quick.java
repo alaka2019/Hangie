@@ -160,6 +160,7 @@ public class quick extends AppCompatActivity {
              code = "";
 
              for (int i = 0; i < str.length(); i++) {
+
                 if (str.charAt(i) != ' ')
                     code += "*";
 
@@ -191,8 +192,14 @@ public class quick extends AppCompatActivity {
                 fail = fail + a + " ";
                 failed.setText(fail);
                 hearts.get(lives).setBackgroundResource(R.drawable.lostheart);
+                Intent intent = new Intent(quick.this, wrong.class);
+                startService(intent);
             }
-
+            else
+            {
+                Intent intent = new Intent(quick.this, correct.class);
+                startService(intent);
+            }
             text.setText(code);
             checkfinish();
         } catch (Exception e) {
