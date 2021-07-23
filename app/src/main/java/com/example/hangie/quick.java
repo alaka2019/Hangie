@@ -210,6 +210,8 @@ public class quick extends AppCompatActivity {
     public void checkfinish() {
         try {
             if (code.equals(str)) {
+                Intent intent = new Intent(quick.this, done.class);
+                startService(intent);
                 startgame();
             }
 
